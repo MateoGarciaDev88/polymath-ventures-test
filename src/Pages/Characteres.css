@@ -1,0 +1,174 @@
+.title {
+    margin: 10rem 0 5rem 0;
+    text-align: left;
+    font-size: 4rem;
+    color: #30DFF2;
+    font-family: 'Anton', sans-serif;
+    /* text-shadow: 5px 1px 5px lawngreen; */
+}
+
+.character-name{
+    /* color: #30DFF2; */
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+}
+
+.main-container {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.image-thumbnail {
+    width: 10rem;
+    opacity: 50%;
+    border: #9b9b9b solid .5rem;
+    border-radius: .7rem;
+}
+
+.container-text-image {
+    position: relative;
+    display: inline-block;
+}
+
+.container-image {
+    opacity: 100%;
+}
+
+.text{
+    font-size: 1.7rem;
+    /* color: #7F7F7F; */
+    position: absolute;
+    top: .2rem;
+    right: .5rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.container-thumbnail img:hover {
+    border: #30DFF2 solid .5rem;
+}   
+
+.grid-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 1rem;
+}
+
+.container-character {
+    display: grid;
+    justify-content: center;
+}
+
+/* Character biography */
+.main-container-biography {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+a {
+    font-size: 4rem;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.container-biography {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.character-info {
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffff
+}
+
+.start{
+    text-align: start;
+}
+
+.end {
+    text-align: end;
+}
+
+.character-biography-name {
+    font-size: 3rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #30DFF2;
+}
+
+.container-info {
+    display: flex;
+    justify-content: space-between;
+    /* border:.3rem solid #666; */
+}
+
+.round-image {
+    width:30rem;
+    height:30rem;
+    border-radius:16rem;
+    /* border:.8rem solid #666; */
+    box-shadow: .4rem 1px 10px lawngreen;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .title {
+        margin: 5rem 0 5rem 0;
+        text-align: center;
+        font-size: 3rem;
+        color: #30DFF2;
+        font-family: 'Anton', sans-serif;
+        /* text-shadow: 5px 1px 5px lawngreen; */
+    }
+
+    .main-container, .main-container-biography {
+        margin: 0 auto;
+    }
+
+    .grid-thumbnail {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .contenedor, .container-biography {
+        display: grid;
+        grid-template-columns: none;
+        justify-content: center;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .image-thumbnail {
+        width: 8rem;
+        opacity: 50%;
+        border: #9b9b9b solid .5rem;
+        border-radius: .7rem;
+    }
+
+    .character-biography-name, .character-biography-name, .character-name {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .character-info {
+        font-size: 1rem;
+    }
+
+    .round-image {
+        width:20rem;
+        height:20rem;
+    }
+
+    a {
+        font-size: 2rem;
+    }
+}
